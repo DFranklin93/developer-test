@@ -2,6 +2,9 @@ body{
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
   margin: 0;
+  .fadeIn{
+    opacity: 0;
+  }
   header{
     background: #2E393D;
     color: #fff;
@@ -11,86 +14,104 @@ body{
     height: 9vw;
     text-transform: uppercase;
     .headerWrapper{
+      align-items: center;
       display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-       .logoContainer{
-         display: inline-flex;
-         width: 23vw;
-       }
-       menu{
-         align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 90%;
+     .logoContainer{
+       display: inline-flex;
+       width: 23vw;
+     }
+     menu{
+       align-items: center;
+       display: none;
+       justify-content: center;
+       margin: 3vw 0 0 0;
+       padding: 0;
+       width: 49vw;
+       ul{
          display: flex;
-         justify-content: center;
-         margin: 3vw 0 0 0;
+         justify-content: space-evenly;
+         list-style: none;
          padding: 0;
-         width: 49vw;
-         ul{
-           display: flex;
-           justify-content: space-evenly;
-           list-style: none;
-           padding: 0;
-           width: 100%;
-           li{
-              a{
-                color: #fff;
-                text-decoration: none;
+         width: 100%;
+         li{
+            a{
+              color: #fff;
+              text-decoration: none;
+              transition: .2s ease-in-out;
+              &:hover{
+                color: #4E98E0;
                 transition: .2s ease-in-out;
-                &:hover{
-                  color: #4E98E0;
-                  transition: .2s ease-in-out;
-                }
               }
+            }
+         }
+       }
+     }
+     .smallMenu{
+       display: inline-block;
+       font-size: 5vw;
+       transition: .2s ease-in-out;
+       &:hover{
+         color: #6CB6FF;
+         cursor: pointer;
+         transition: .2s ease-in-out;
+       }
+     }
+     .side-nav{
+       background: #2E393D;
+       display: flex;
+       height: 100%;
+       justify-content: center;
+       left: 99999px;
+       list-style: none;
+       opacity: 1;
+       overflow-x: hidden;
+       padding-top: 50px;
+       position: fixed;
+       right: 0;
+       top: 0;
+       transition: 0.5s ease-in-out;
+       width: 100%;
+       z-index: 1;
+       .sideNavItems{
+         width: 100%;
+         .btn-close{
+           cursor: pointer;
+           font-size: 2.2em;
+           margin: 0 0 0 80%;
+           text-align: none;
+           transition: .2s ease-in-out;
+           &:hover{
+             color: #6CB6FF;
+             transition: .2s ease-in-out;
+           }
+         }
+         li{
+           padding: 6vw;
+           font-size: 2.2em;
+           color: #ccc;
+           display: block;
+           margin: 0 auto;
+           transition: 0.3s ease-in-out;
+           text-align: center;
+           text-transform: capitalize;
+           a{
+             color: #ccc;
+             text-decoration: none;
+             transition: 0.3s ease-in-out;
+             &:hover{
+               border-bottom: none;
+               color: #6CB6FF;
+               padding: 5px 10px;
+               transition: 0.3s ease-in-out;
+             }
            }
          }
        }
-
+     }
     }
-    // .headerWrapper{
-    //   align-items: center;
-    //   display: flex;
-    //   justify-content: space-between;
-    //   margin: 0 auto;
-    //   min-width: 54%;
-    //   max-width: 80%;
-    //   position: relative;
-    //   width: 100%;
-    //   .logoContainer{
-    //     cursor: context-menu;
-    //     display: inline-block;
-    //     padding: 4px 0 0 0;
-    //     width: 28.57%;
-    //     img{
-    //       width: 100%;
-    //     }
-    //   }
-    //   menu{
-    //     font-size: 2vw;
-    //     margin: 4.5vw 0 2% 0;
-    //     ul{
-    //       list-style: none;
-    //       padding: 0;
-    //       li{
-    //         display: inline-block;
-    //         padding: 0 10px;
-    //         text-transform: uppercase;
-    //         &:nth-child(4){
-    //           padding-right: 0;
-    //         }
-    //         a{
-    //           color: white;
-    //           text-decoration: none;
-    //           transition: .2s ease-in-out;
-    //           &:hover{
-    //             color: #6CB6FF;
-    //             transition: .2s ease-in-out;
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-
   }
   .intro{
     align-items: center;
@@ -505,3 +526,209 @@ body{
   }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media screen and (min-width: 769px){
+  body{
+    header{
+      font-size: 1.5vw;
+      height: 7vw;
+      .headerWrapper{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .logoContainer{
+          width: 16vw;
+        }
+        menu{
+          display: inline-block;
+          margin: 2vw 0 0 0;
+        }
+        .smallMenu{
+          display: none;
+        }
+      }
+    }
+    .intro{
+      padding: 4vw 0 8vw 0;
+      .introWrapper{
+        .introHeader{
+          .heading{
+            font-size: 4.5vw;
+          }
+          .subheading{
+            font-size: 2.5vw;
+            padding-top: 2%;
+          }
+        }
+        .carouselContainer{
+          .carouselItems{
+            ul{
+              li{
+                width: 5vw;
+                &:nth-child(2){
+                  width: 7vw;
+                }
+              }
+            }
+          }
+        }
+        .btnGroup{
+          padding: 9vw 0 0 0;
+          button{
+            border: 2px solid #fff;
+            font-size: 1.5vw;
+            margin: 0 2vw;
+            padding: .5vw 0;
+            width: 16vw;
+          }
+        }
+      }
+    }
+    .services{
+      padding: 7vw 0;
+      .servicesContainer{
+        .containerHeader{
+          font-size: 3vw;
+          padding: 0 0 8vw 0;
+        }
+        .containerItems{
+          .itemOne, .itemTwo, .itemThree{
+            width: 20vw;
+            .itemHeader{
+              img{
+                height: 6vw;
+              }
+              h3{
+                font-size: 2.5vw;
+              }
+            }
+            .itemBody{
+              font-size: 1.5vw;
+            }
+          }
+        }
+      }
+    }
+    .products{
+      height: 57vw;
+      .shaped{
+        height: 11vw;
+        width: 20vw;
+      }
+      .img{
+        img{
+          height: 64vw;
+          left:40.5%;
+          top: -2vw;
+          width: 94%;
+        }
+      }
+      .productsTextBody{
+        margin: -9vw 0 0 17vw;
+        width: 34vw;
+        h2{
+          font-size: 3vw;
+        }
+        h3{
+          font-size: 2vw;
+        }
+        .body{
+          font-size: 1.5vw;
+        }
+      }
+    }
+    .subscribe{
+      height: 33vw;
+      .container{
+        width: 51vw;
+        .subscribeHeading{
+          font-size: 3vw;
+        }
+        article{
+          font-size: 1.5vw;
+          line-height: 2.5vw;
+          padding: 4vw 0;
+        }
+        form{
+          width: 51vw;
+          input{
+            padding: .5% 0 .5% 6%;
+          }
+          button{
+            font-size: 1.5vw;
+            left: 31.8vw;
+            padding: 0.3vw 0vw;
+            width: 19vw;
+          }
+        }
+      }
+      .shaped{
+        height: 10vw;
+        width: 21vw;
+      }
+    }
+    .contact{
+      .contactContainer{
+        .inTouchBox{
+          margin: 0 0 0 16vw;
+          width: 33vw;
+          .inTouchHeading{
+            h2{
+              font-size: 3.5vw;
+            }
+            h3{
+              font-size: 2.5vw;
+            }
+          }
+          article{
+            font-size: 1.5vw;
+            p{
+              width: unset;
+            }
+          }
+        }
+        .contactForm{
+          margin: unset;
+          padding: 0 0 0 6vw;
+          h3{
+            font-size: 2.5vw;
+            padding: 7.5vw 0 0 0;
+          }
+          form{
+            font-size: 1.5vw;
+            width: 31vw;
+            div{
+              input{
+                font-size: 1.5vw;
+                padding: 1.5%;
+              }
+              textarea{
+                font-size: 1.5vw;
+                height: 10.5vw;
+                width: 29.7vw;
+              }
+            }
+            .btn{
+              width: 12vw;
+              button{
+                font-size: 1.5vw;
+                padding: .5vw 3vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer{
+      padding: 1% 0;
+      .footerContainer{
+        .rightBox{
+          .left, .right{
+            ul li{
+              font-size: 1.5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

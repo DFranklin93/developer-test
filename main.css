@@ -2,6 +2,8 @@ body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
   margin: 0; }
+  body .fadeIn {
+    opacity: 0; }
   body header {
     background: #2E393D;
     color: #fff;
@@ -11,15 +13,17 @@ body {
     height: 9vw;
     text-transform: uppercase; }
     body header .headerWrapper {
+      align-items: center;
       display: flex;
-      justify-content: space-evenly;
-      width: 100%; }
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 90%; }
       body header .headerWrapper .logoContainer {
         display: inline-flex;
         width: 23vw; }
       body header .headerWrapper menu {
         align-items: center;
-        display: flex;
+        display: none;
         justify-content: center;
         margin: 3vw 0 0 0;
         padding: 0;
@@ -37,6 +41,59 @@ body {
             body header .headerWrapper menu ul li a:hover {
               color: #4E98E0;
               transition: .2s ease-in-out; }
+      body header .headerWrapper .smallMenu {
+        display: inline-block;
+        font-size: 5vw;
+        transition: .2s ease-in-out; }
+        body header .headerWrapper .smallMenu:hover {
+          color: #6CB6FF;
+          cursor: pointer;
+          transition: .2s ease-in-out; }
+      body header .headerWrapper .side-nav {
+        background: #2E393D;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        left: 99999px;
+        list-style: none;
+        opacity: 1;
+        overflow-x: hidden;
+        padding-top: 50px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transition: 0.5s ease-in-out;
+        width: 100%;
+        z-index: 1; }
+        body header .headerWrapper .side-nav .sideNavItems {
+          width: 100%; }
+          body header .headerWrapper .side-nav .sideNavItems .btn-close {
+            cursor: pointer;
+            font-size: 2.2em;
+            margin: 0 0 0 80%;
+            text-align: none;
+            transition: .2s ease-in-out; }
+            body header .headerWrapper .side-nav .sideNavItems .btn-close:hover {
+              color: #6CB6FF;
+              transition: .2s ease-in-out; }
+          body header .headerWrapper .side-nav .sideNavItems li {
+            padding: 6vw;
+            font-size: 2.2em;
+            color: #ccc;
+            display: block;
+            margin: 0 auto;
+            transition: 0.3s ease-in-out;
+            text-align: center;
+            text-transform: capitalize; }
+            body header .headerWrapper .side-nav .sideNavItems li a {
+              color: #ccc;
+              text-decoration: none;
+              transition: 0.3s ease-in-out; }
+              body header .headerWrapper .side-nav .sideNavItems li a:hover {
+                border-bottom: none;
+                color: #6CB6FF;
+                padding: 5px 10px;
+                transition: 0.3s ease-in-out; }
   body .intro {
     align-items: center;
     background: url("./images/introImgTwo.jpg") no-repeat center center;
@@ -358,5 +415,130 @@ body {
         bottom: 0;
         left: 45vw;
         position: absolute; }
+
+@media screen and (min-width: 769px) {
+  body header {
+    font-size: 1.5vw;
+    height: 7vw; }
+    body header .headerWrapper {
+      display: flex;
+      justify-content: space-around;
+      width: 100%; }
+      body header .headerWrapper .logoContainer {
+        width: 16vw; }
+      body header .headerWrapper menu {
+        display: inline-block;
+        margin: 2vw 0 0 0; }
+      body header .headerWrapper .smallMenu {
+        display: none; }
+  body .intro {
+    padding: 4vw 0 8vw 0; }
+    body .intro .introWrapper .introHeader .heading {
+      font-size: 4.5vw; }
+    body .intro .introWrapper .introHeader .subheading {
+      font-size: 2.5vw;
+      padding-top: 2%; }
+    body .intro .introWrapper .carouselContainer .carouselItems ul li {
+      width: 5vw; }
+      body .intro .introWrapper .carouselContainer .carouselItems ul li:nth-child(2) {
+        width: 7vw; }
+    body .intro .introWrapper .btnGroup {
+      padding: 9vw 0 0 0; }
+      body .intro .introWrapper .btnGroup button {
+        border: 2px solid #fff;
+        font-size: 1.5vw;
+        margin: 0 2vw;
+        padding: .5vw 0;
+        width: 16vw; }
+  body .services {
+    padding: 7vw 0; }
+    body .services .servicesContainer .containerHeader {
+      font-size: 3vw;
+      padding: 0 0 8vw 0; }
+    body .services .servicesContainer .containerItems .itemOne, body .services .servicesContainer .containerItems .itemTwo, body .services .servicesContainer .containerItems .itemThree {
+      width: 20vw; }
+      body .services .servicesContainer .containerItems .itemOne .itemHeader img, body .services .servicesContainer .containerItems .itemTwo .itemHeader img, body .services .servicesContainer .containerItems .itemThree .itemHeader img {
+        height: 6vw; }
+      body .services .servicesContainer .containerItems .itemOne .itemHeader h3, body .services .servicesContainer .containerItems .itemTwo .itemHeader h3, body .services .servicesContainer .containerItems .itemThree .itemHeader h3 {
+        font-size: 2.5vw; }
+      body .services .servicesContainer .containerItems .itemOne .itemBody, body .services .servicesContainer .containerItems .itemTwo .itemBody, body .services .servicesContainer .containerItems .itemThree .itemBody {
+        font-size: 1.5vw; }
+  body .products {
+    height: 57vw; }
+    body .products .shaped {
+      height: 11vw;
+      width: 20vw; }
+    body .products .img img {
+      height: 64vw;
+      left: 40.5%;
+      top: -2vw;
+      width: 94%; }
+    body .products .productsTextBody {
+      margin: -9vw 0 0 17vw;
+      width: 34vw; }
+      body .products .productsTextBody h2 {
+        font-size: 3vw; }
+      body .products .productsTextBody h3 {
+        font-size: 2vw; }
+      body .products .productsTextBody .body {
+        font-size: 1.5vw; }
+  body .subscribe {
+    height: 33vw; }
+    body .subscribe .container {
+      width: 51vw; }
+      body .subscribe .container .subscribeHeading {
+        font-size: 3vw; }
+      body .subscribe .container article {
+        font-size: 1.5vw;
+        line-height: 2.5vw;
+        padding: 4vw 0; }
+      body .subscribe .container form {
+        width: 51vw; }
+        body .subscribe .container form input {
+          padding: .5% 0 .5% 6%; }
+        body .subscribe .container form button {
+          font-size: 1.5vw;
+          left: 31.8vw;
+          padding: 0.3vw 0vw;
+          width: 19vw; }
+    body .subscribe .shaped {
+      height: 10vw;
+      width: 21vw; }
+  body .contact .contactContainer .inTouchBox {
+    margin: 0 0 0 16vw;
+    width: 33vw; }
+    body .contact .contactContainer .inTouchBox .inTouchHeading h2 {
+      font-size: 3.5vw; }
+    body .contact .contactContainer .inTouchBox .inTouchHeading h3 {
+      font-size: 2.5vw; }
+    body .contact .contactContainer .inTouchBox article {
+      font-size: 1.5vw; }
+      body .contact .contactContainer .inTouchBox article p {
+        width: unset; }
+  body .contact .contactContainer .contactForm {
+    margin: unset;
+    padding: 0 0 0 6vw; }
+    body .contact .contactContainer .contactForm h3 {
+      font-size: 2.5vw;
+      padding: 7.5vw 0 0 0; }
+    body .contact .contactContainer .contactForm form {
+      font-size: 1.5vw;
+      width: 31vw; }
+      body .contact .contactContainer .contactForm form div input {
+        font-size: 1.5vw;
+        padding: 1.5%; }
+      body .contact .contactContainer .contactForm form div textarea {
+        font-size: 1.5vw;
+        height: 10.5vw;
+        width: 29.7vw; }
+      body .contact .contactContainer .contactForm form .btn {
+        width: 12vw; }
+        body .contact .contactContainer .contactForm form .btn button {
+          font-size: 1.5vw;
+          padding: .5vw 3vw; }
+  body footer {
+    padding: 1% 0; }
+    body footer .footerContainer .rightBox .left ul li, body footer .footerContainer .rightBox .right ul li {
+      font-size: 1.5vw; } }
 
 /*# sourceMappingURL=main.css.map */
