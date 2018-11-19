@@ -83,11 +83,12 @@ body {
             display: flex;
             list-style: none;
             justify-content: space-around;
-            padding: 0; }
+            padding: 0;
+            width: 100%; }
             body .intro .introWrapper .carouselContainer .carouselItems ul li {
-              width: 10%; }
+              width: 8vw; }
               body .intro .introWrapper .carouselContainer .carouselItems ul li:nth-child(2) {
-                width: 15%; }
+                width: 10vw; }
                 body .intro .introWrapper .carouselContainer .carouselItems ul li:nth-child(2) svg .a, body .intro .introWrapper .carouselContainer .carouselItems ul li:nth-child(2) svg .c {
                   fill: #2e393d; }
               body .intro .introWrapper .carouselContainer .carouselItems ul li:hover {

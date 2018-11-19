@@ -146,10 +146,11 @@ body{
             list-style: none;
             justify-content: space-around;
             padding: 0;
+            width: 100%;
             li{
-              width: 10%;
+              width: 8vw;
               &:nth-child(2){
-                width: 15%;
+                width: 10vw;
                 svg{
                   .a,.c{
                     fill: #2e393d;
