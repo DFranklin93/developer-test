@@ -6,273 +6,223 @@ body {
     background: #2E393D;
     color: #fff;
     display: flex;
+    font-size: 2vw;
     font-weight: 300;
-    height: 100px; }
-    body header .container {
+    height: 9vw;
+    text-transform: uppercase; }
+    body header .headerWrapper {
       display: flex;
-      justify-content: space-between;
-      margin: 0 auto;
-      min-width: 54%;
-      max-width: 80%;
-      position: relative;
+      justify-content: space-evenly;
       width: 100%; }
-      body header .container .logoContainer {
-        cursor: context-menu;
-        display: inline-block;
-        padding: 35px 0 0 0; }
-        body header .container .logoContainer .logo {
-          display: inline-block;
-          padding-left: 75px;
-          position: relative; }
-          body header .container .logoContainer .logo .backBox {
-            border: 2px solid #fff;
-            bottom: -3px;
-            height: 55px;
-            position: absolute;
-            right: 15px;
-            width: 55px;
-            z-index: 1; }
-          body header .container .logoContainer .logo .frontBox {
-            background: #2E393D;
-            border: 2px solid #fff;
-            bottom: -3px;
-            height: 55px;
-            padding: 1%;
-            position: absolute;
-            top: -46px;
-            right: 3px;
-            width: 55px;
-            z-index: 2; }
-          body header .container .logoContainer .logo div {
-            bottom: 0px;
-            font-size: 45px;
-            font-weight: bolder;
-            position: absolute;
-            right: 6px; }
-        body header .container .logoContainer .logoName {
-          display: inline-block;
-          font-size: 34px;
-          letter-spacing: 3px; }
-      body header .container menu {
-        display: inline-block;
-        font-size: 105%;
-        padding: 34px 0 0 0; }
-        body header .container menu ul {
+      body header .headerWrapper .logoContainer {
+        display: inline-flex;
+        width: 23vw; }
+      body header .headerWrapper menu {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 3vw 0 0 0;
+        padding: 0;
+        width: 49vw; }
+        body header .headerWrapper menu ul {
+          display: flex;
+          justify-content: space-evenly;
           list-style: none;
-          padding: 0; }
-          body header .container menu ul li {
-            display: inline-block;
-            padding: 0 8px;
-            text-transform: uppercase; }
-            body header .container menu ul li:nth-child(4) {
-              padding-right: 0; }
-            body header .container menu ul li a {
-              color: white;
-              text-decoration: none;
+          padding: 0;
+          width: 100%; }
+          body header .headerWrapper menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: .2s ease-in-out; }
+            body header .headerWrapper menu ul li a:hover {
+              color: #4E98E0;
               transition: .2s ease-in-out; }
-              body header .container menu ul li a:hover {
-                color: #6CB6FF;
-                transition: .2s ease-in-out; }
   body .intro {
+    align-items: center;
     background: url("./images/introImgTwo.jpg") no-repeat center center;
     background-size: cover;
     color: #fff;
-    height: 100vh;
+    display: flex;
+    padding: 13vw 0;
     width: 100%; }
-    body .intro .container .headingBox {
-      margin: 0 auto;
-      padding: 5% 0 0 0;
-      text-align: center;
-      width: 70%; }
-      body .intro .container .headingBox .introHeading {
-        font-size: 45px;
-        font-weight: 700;
-        letter-spacing: 3px;
-        text-transform: uppercase; }
-      body .intro .container .headingBox .introSubheading {
-        font-size: 35px;
-        letter-spacing: 1px;
-        text-align: center; }
-    body .intro .container .carouselContainer {
-      display: flex;
-      margin: 0 auto;
-      padding: 8% 0 0 0;
-      width: 90%; }
-      body .intro .container .carouselContainer .leftArrow, body .intro .container .carouselContainer .rightArrow {
-        display: inline-block;
-        padding: 2.2% 0; }
-      body .intro .container .carouselContainer .carouselItems {
+    body .intro .introWrapper {
+      width: 100%; }
+      body .intro .introWrapper .introHeader {
+        margin: 0 auto;
+        text-align: center;
+        width: 75%; }
+        body .intro .introWrapper .introHeader .heading {
+          font-size: 5.5vw;
+          font-weight: bolder;
+          letter-spacing: 3px;
+          text-transform: uppercase; }
+        body .intro .introWrapper .introHeader .subheading {
+          font-size: 3vw;
+          letter-spacing: 1px;
+          padding-top: 1%;
+          text-align: center; }
+      body .intro .introWrapper .carouselContainer {
+        align-items: center;
         display: flex;
-        justify-content: center;
+        margin: 0 auto;
+        padding: 8% 0 0 0;
+        width: 90%; }
+        body .intro .introWrapper .carouselContainer .leftArrow, body .intro .introWrapper .carouselContainer .rightArrow {
+          display: inline-block;
+          padding: 2.2% 0; }
+          body .intro .introWrapper .carouselContainer .leftArrow img:hover, body .intro .introWrapper .carouselContainer .rightArrow img:hover {
+            cursor: pointer; }
+        body .intro .introWrapper .carouselContainer .carouselItems {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+          width: 70%; }
+          body .intro .introWrapper .carouselContainer .carouselItems ul {
+            align-items: center;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            padding: 0; }
+            body .intro .introWrapper .carouselContainer .carouselItems ul li {
+              width: 10%; }
+              body .intro .introWrapper .carouselContainer .carouselItems ul li:nth-child(2) {
+                width: 15%; }
+                body .intro .introWrapper .carouselContainer .carouselItems ul li:nth-child(2) svg .a, body .intro .introWrapper .carouselContainer .carouselItems ul li:nth-child(2) svg .c {
+                  fill: #2e393d; }
+              body .intro .introWrapper .carouselContainer .carouselItems ul li:hover {
+                cursor: pointer; }
+              body .intro .introWrapper .carouselContainer .carouselItems ul li svg {
+                width: 100%; }
+      body .intro .introWrapper .btnGroup {
+        margin: 0 auto;
+        max-width: 78%;
+        padding: 9% 0 0 0;
+        text-align: center;
         width: 100%; }
-        body .intro .container .carouselContainer .carouselItems .leftBox, body .intro .container .carouselContainer .carouselItems .rightBox {
-          display: inline-block;
-          width: 6%;
-          padding: 1% 9%; }
-        body .intro .container .carouselContainer .carouselItems .middleBox {
-          display: inline-block;
-          width: 9%; }
-    body .intro .container .btnGroup {
-      margin: 0 auto;
-      padding: 9% 0 0 0;
-      text-align: center;
-      width: 50%; }
-      body .intro .container .btnGroup button {
-        background: none;
-        border-radius: 50px;
-        color: white;
-        height: 43px;
-        margin: 0 5%;
-        text-transform: uppercase;
-        transition: .2s ease-in-out;
-        width: 187px; }
-        body .intro .container .btnGroup button:hover {
-          background: #4E98E0;
-          cursor: pointer;
+        body .intro .introWrapper .btnGroup button {
+          background: none;
+          border: 3px solid #fff;
+          border-radius: 50px;
+          color: white;
+          font-size: 2.5vw;
+          margin: 0 1vw;
+          padding: 1vw 4vw;
+          text-transform: uppercase;
           transition: .2s ease-in-out; }
+          body .intro .introWrapper .btnGroup button:hover {
+            background: #4E98E0;
+            cursor: pointer;
+            transition: .2s ease-in-out; }
   body .services {
     background: #2E393D;
     color: #fff;
-    padding-bottom: 10%; }
-    body .services .headingBox {
-      margin: 0 auto;
-      padding: 9% 0 0 0;
-      text-align: center;
-      width: 75%; }
-      body .services .headingBox .serviceHeading {
-        font-size: 35px;
-        font-weight: 700;
-        letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    padding: 9vw 0;
+    text-align: center; }
+    body .services .servicesContainer .containerHeader {
+      font-size: 4.5vw;
+      font-weight: 700;
+      padding: 0 0 9vw 0;
+      text-transform: uppercase; }
+    body .services .servicesContainer .containerItems .itemOne, body .services .servicesContainer .containerItems .itemTwo, body .services .servicesContainer .containerItems .itemThree {
+      display: inline-block;
+      padding: 0 2vw;
+      width: 26.7vw; }
+      body .services .servicesContainer .containerItems .itemOne .itemHeader img, body .services .servicesContainer .containerItems .itemTwo .itemHeader img, body .services .servicesContainer .containerItems .itemThree .itemHeader img {
+        height: 10vw; }
+      body .services .servicesContainer .containerItems .itemOne .itemHeader h3, body .services .servicesContainer .containerItems .itemTwo .itemHeader h3, body .services .servicesContainer .containerItems .itemThree .itemHeader h3 {
+        color: #6CB6FF;
+        font-size: 3vw;
+        margin: 4vw 0 1vw 0;
         text-transform: uppercase; }
-    body .services .serviceItems {
-      display: grid;
-      grid-column-gap: 15px;
-      grid-row-gap: 15px;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      justify-content: space-evenly;
-      margin: 0 auto;
-      padding: 6% 0 0 0;
-      width: 70%; }
-      body .services .serviceItems .marketing {
-        text-align: center; }
-        body .services .serviceItems .marketing div img {
-          width: 46%; }
-        body .services .serviceItems .marketing .header {
-          color: #6CB6FF;
-          font-size: 26px;
-          padding: 16% 0 0 0; }
-        body .services .serviceItems .marketing .body {
-          line-height: 20px;
-          margin: 0 auto;
-          text-align: start;
-          width: 66%; }
-      body .services .serviceItems .creative {
-        text-align: center; }
-        body .services .serviceItems .creative div img {
-          width: 18%; }
-        body .services .serviceItems .creative .header {
-          color: #6CB6FF;
-          font-size: 26px;
-          padding: 16% 0 0 0; }
-        body .services .serviceItems .creative .body {
-          line-height: 20px;
-          margin: 0 auto;
-          text-align: start;
-          width: 66%; }
-      body .services .serviceItems .analytics {
-        text-align: center; }
-        body .services .serviceItems .analytics div img {
-          width: 19%; }
-        body .services .serviceItems .analytics .header {
-          color: #6CB6FF;
-          font-size: 26px;
-          padding: 16% 0 0 0; }
-        body .services .serviceItems .analytics .body {
-          line-height: 20px;
-          margin: 0 auto;
-          text-align: start;
-          width: 66%; }
+      body .services .servicesContainer .containerItems .itemOne .itemBody, body .services .servicesContainer .containerItems .itemTwo .itemBody, body .services .servicesContainer .containerItems .itemThree .itemBody {
+        font-size: 2vw;
+        text-align: left; }
   body .products {
-    background: url("./images/product_images.png") no-repeat;
-    background-position: calc(100% + 539px) calc(100% + 5px);
-    background-size: 100% 100%;
+    align-items: center;
+    display: flex;
+    height: 59vw;
     overflow: hidden;
+    position: relative;
     width: 100vw; }
     body .products .shaped {
       background: #178CC2;
-      clip-path: polygon(0 0, 100% 0, 0 34%, 0 34%);
-      float: left;
-      height: 100vh;
+      clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
+      height: 18vw;
+      left: 0;
+      position: absolute;
       shape-outside: polygon(0 0, 100% 0, 0 34%, 0 34%);
-      width: 361px; }
-    body .products .textBox {
-      margin: 153px 0 0 312px;
-      width: 36%; }
-      body .products .textBox .header {
-        color: #2E393D;
-        font-size: 40px;
-        font-weight: bold;
-        text-transform: uppercase; }
-      body .products .textBox .subheader {
-        color: #6CB6FF;
-        font-size: 30px;
-        padding: 30px 0 0 0;
-        text-transform: uppercase; }
-      body .products .textBox .body {
-        width: 70%; }
-    body .products .imgBox {
-      float: right;
-      margin: 0 -470px 0 0;
+      top: 0;
+      width: 27vw; }
+    body .products .img img {
+      height: 62vw;
+      left: 43.5%;
+      position: absolute;
+      top: 0;
+      width: 92%; }
+    body .products .productsTextBody {
+      margin: 0 0 0 12vw;
       position: relative;
-      width: 100%; }
-      body .products .imgBox .img {
-        background: url("./images/product_images.png") no-repeat cover cover;
-        width: 100%; }
+      width: 46vw; }
+      body .products .productsTextBody h2 {
+        color: #2E393D;
+        font-size: 4vw;
+        text-transform: uppercase; }
+      body .products .productsTextBody h3 {
+        color: #6CB6FF;
+        font-size: 3vw;
+        text-transform: uppercase; }
+      body .products .productsTextBody .body {
+        font-size: 2vw; }
   body .subscribe {
     background: #C5DEE0;
+    display: flex;
+    height: 41vw;
+    justify-content: center;
     position: relative;
     text-align: center; }
     body .subscribe .container {
-      margin: 0 auto;
-      max-width: 80%; }
+      width: 67vw; }
       body .subscribe .container .subscribeHeading {
         color: #2E393D;
-        font-size: 35px;
+        font-size: 4.5vw;
         font-weight: 700;
         padding: 8% 0 0 0;
         text-transform: uppercase; }
       body .subscribe .container article {
         color: #2E393D;
-        line-height: 20px;
+        font-size: 2vw;
+        line-height: 3vw;
         margin: 0 auto;
-        padding: 3% 0;
-        width: 47%; }
+        padding: 3% 0; }
       body .subscribe .container form {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
-        padding: 0 0 8% 0;
         position: relative;
-        width: 38%; }
+        width: 68vw; }
         body .subscribe .container form input {
           border: none;
           border-radius: 50px;
           flex-grow: 2;
-          font-size: 16px;
-          padding: 2.5% 0 2.5% 5%; }
+          font-size: 2vw;
+          padding: 2.5% 0 2.5% 6%; }
         body .subscribe .container form button {
           background: #4E98E0;
           border: 1px solid #4E98E0;
           border-radius: 50px;
           color: white;
-          font-size: 16px;
-          left: 248px;
+          font-size: 2vw;
+          left: 40.8vw;
           letter-spacing: 1px;
-          padding: 8px 45px;
+          padding: 1.4vw 0vw;
           position: absolute;
           text-transform: uppercase;
-          top: 2px;
-          transition: .3s ease-in-out; }
+          top: .2vw;
+          transition: .3s ease-in-out;
+          width: 27vw; }
           body .subscribe .container form button:hover {
             color: #4E98E0;
             cursor: pointer;
@@ -283,213 +233,129 @@ body {
       bottom: 0;
       clip-path: polygon(0 99%, 100% 0, 100% 100%, 0 99%);
       float: right;
-      height: 28vh;
+      height: 14vw;
       margin: -14.9% 0 0 0;
       position: absolute;
       right: 0;
       shape-outside: polygon(0 99%, 100% 0, 100% 100%, 0 99%);
-      width: 361px; }
+      width: 22vw; }
   body .contact {
     background: #F0F0F0;
     padding: 8% 0; }
     body .contact .contactContainer {
-      display: grid;
-      grid-template-columns: 1fr 1fr; }
+      display: flex; }
       body .contact .contactContainer .inTouchBox {
-        grid-column: 1/2;
-        margin: 0 0 0 48%;
-        width: 52%; }
-        body .contact .contactContainer .inTouchBox .inTouchHeading {
+        margin: 0 0 0 8vw;
+        width: 46vw; }
+        body .contact .contactContainer .inTouchBox .inTouchHeading h2 {
           color: #2E393D;
-          font-size: 24px;
+          font-size: 4.5vw;
           font-weight: 700;
           text-transform: uppercase; }
-        body .contact .contactContainer .inTouchBox .inTouchSubheading {
+        body .contact .contactContainer .inTouchBox .inTouchHeading h3 {
           color: #6CB6FF;
-          font-size: 18px;
-          font-weight: bold;
-          padding: 12% 0 0 0;
+          font-size: 3vw;
           text-transform: uppercase; }
         body .contact .contactContainer .inTouchBox article {
-          margin: -3% 0 0 0;
-          width: 100%; }
-          body .contact .contactContainer .inTouchBox article p:nth-child(2) {
-            width: 96%; }
+          font-size: 2vw;
+          margin: -1vw 0 0 0; }
+          body .contact .contactContainer .inTouchBox article p {
+            width: 44vw; }
       body .contact .contactContainer .contactForm {
-        grid-column: 2/3;
-        margin: 0 0 0 8%;
-        width: 60%; }
-        body .contact .contactContainer .contactForm .formSubheading {
+        margin: 0 0 0 4vw;
+        width: 36vw; }
+        body .contact .contactContainer .contactForm h3 {
           color: #6CB6FF;
-          font-size: 18px;
-          font-weight: bold;
-          padding: 18.5% 0 0 0;
+          font-size: 3vw;
+          padding: 9.5vw 0 0 0;
           text-transform: uppercase; }
-        body .contact .contactContainer .contactForm form div .label {
-          display: block;
-          padding: 1% 0; }
-        body .contact .contactContainer .contactForm form div input {
-          border: 1px solid #D9D9D9;
-          padding: 2%;
-          width: 66%; }
-        body .contact .contactContainer .contactForm form div textarea {
-          border: 1px solid #D9D9D9;
-          height: 100px;
-          padding: 2%;
-          resize: none;
-          width: 66%; }
-        body .contact .contactContainer .contactForm form .btn {
-          width: 71%; }
-          body .contact .contactContainer .contactForm form .btn button {
-            background: #4E98E0;
-            border: 1px solid #4E98E0;
-            border-radius: 50px;
-            color: white;
-            font-size: 16px;
-            letter-spacing: 1px;
-            margin: 8% 0 0 28%;
-            padding: 2% 10%;
-            text-transform: uppercase;
-            transition: .3s ease-in-out; }
-            body .contact .contactContainer .contactForm form .btn button:hover {
-              color: #4E98E0;
-              cursor: pointer;
-              background: #2E393D;
+        body .contact .contactContainer .contactForm form {
+          font-size: 2vw;
+          margin: -2vw 0; }
+          body .contact .contactContainer .contactForm form div .label {
+            display: block;
+            padding: 1% 0; }
+          body .contact .contactContainer .contactForm form div input {
+            border: 1px solid #D9D9D9;
+            font-size: 2vw;
+            padding: 2%;
+            width: 30vw; }
+          body .contact .contactContainer .contactForm form div textarea {
+            border: 1px solid #D9D9D9;
+            font-size: 2vw;
+            height: 13.5vw;
+            padding: 2%;
+            resize: none;
+            width: 30vw; }
+          body .contact .contactContainer .contactForm form .btn {
+            margin: 0 auto;
+            padding: 2vw 0 0 0;
+            width: 20vw; }
+            body .contact .contactContainer .contactForm form .btn button {
+              background: #4E98E0;
+              border: 1px solid #4E98E0;
+              border-radius: 50px;
+              color: white;
+              font-size: 2vw;
+              letter-spacing: 1px;
+              padding: 1vw 4vw;
+              text-transform: uppercase;
               transition: .3s ease-in-out; }
+              body .contact .contactContainer .contactForm form .btn button:hover {
+                color: #4E98E0;
+                cursor: pointer;
+                background: #2E393D;
+                transition: .3s ease-in-out; }
   body footer {
+    align-items: flex-start;
     background: #2E393D;
     color: #C5DEE0;
-    padding: 3% 0; }
-    body footer .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin: 0 auto;
-      width: 93%; }
-      body footer .container div p {
-        margin-top: 0; }
-      body footer .container div ul {
-        margin: 0 auto; }
-        body footer .container div ul li {
-          font-size: 20px;
-          list-style: none;
-          text-transform: uppercase; }
-      body footer .container .first, body footer .container .second {
-        font-size: 12px; }
-      body footer .container .first {
-        width: 83%; }
-      body footer .container .third {
-        justify-self: center;
-        width: 68%; }
-        body footer .container .third ul {
-          margin: 0 auto; }
-          body footer .container .third ul li {
-            padding: 0 0 7% 0; }
-            body footer .container .third ul li a {
-              color: #C5DEE0;
-              text-decoration: none; }
-      body footer .container .fourth ul {
-        margin: 0 auto; }
-        body footer .container .fourth ul li {
-          padding: 0 0 5% 0; }
-          body footer .container .fourth ul li a {
-            color: #C5DEE0;
-            text-decoration: none; }
-    body footer .bottom {
-      font-size: 12px;
-      margin: 0 auto;
-      text-align: center; }
-
-@media screen and (max-width: 767.98px) {
-  body header .logoContainer {
-    margin: 5.3% 0 0 14%; }
-  body header menu {
-    margin: 7% 0 0 0;
-    width: 60%; }
-    body header menu ul {
-      padding-left: 18px; }
-      body header menu ul li {
-        padding: 0 1%; }
-  body .intro .headingBox {
-    padding: 12% 0 0 0;
-    width: 80%; }
-  body .intro .btnGroup {
-    width: 73%; }
-    body .intro .btnGroup button {
-      margin: 0 2%; }
-  body .services .serviceItems {
-    grid-template-columns: repeat(auto-fill, minmax(262px, 1fr)); }
-    body .services .serviceItems .marketing {
-      padding: 0 0 10% 0;
+    display: flex;
+    font-size: 1vw;
+    justify-content: center;
+    padding: 3% 0;
+    position: relative; }
+    body footer .footerContainer {
+      display: flex;
+      justify-content: space-evenly;
       width: 100%; }
-      body .services .serviceItems .marketing div img {
-        width: 30%; }
-      body .services .serviceItems .marketing .header {
-        padding: 6% 0 2% 0; }
-      body .services .serviceItems .marketing .body {
-        text-align: center;
-        width: 54%; }
-    body .services .serviceItems .creative {
-      padding: 0 0 10% 0; }
-      body .services .serviceItems .creative .header {
-        padding: 6% 0 2% 0; }
-      body .services .serviceItems .creative .body {
-        text-align: center;
-        width: 56%; }
-    body .services .serviceItems .analytics .header {
-      padding: 6% 0 2% 0; }
-    body .services .serviceItems .analytics .body {
-      text-align: center;
-      width: 55%; }
-  body .products {
-    height: 77vh; }
-    body .products .shaped {
-      clip-path: polygon(0 0, 54% 0, 0 28%, 0 28%); }
-    body .products .textBox .headingContainer {
-      left: 128px;
-      top: 100px; }
-    body .products .textBox article {
-      left: 128px;
-      top: 199px;
-      width: 38%; }
-    body .products .imgBox {
-      float: none;
-      margin: 23% 0 0 38%;
-      width: 100%; }
-  body .subscribe .subscribeHeading {
-    padding: 7% 0 0 0; }
-  body .subscribe article {
-    width: 70%; }
-  body .subscribe form {
-    padding: 1% 0 8% 0; }
-    body .subscribe form input {
-      padding: 2.5% 0 2.5% 5%;
-      margin: 0 -10%; }
-    body .subscribe form button {
-      font-size: 14px;
-      padding: 2.2% 6%;
-      right: -28px;
-      top: 8.5px; }
-  body .subscribe .shaped {
-    clip-path: polygon(48% 99%, 100% 40%, 100% 100%, 48% 99%);
-    margin: -28% 0 0 0; }
-  body .contact .contactContainer .inTouchBox {
-    margin: 0 0 0 20%;
-    width: 80%; }
-  body .contact .contactContainer .contactForm {
-    width: 100%; }
-  body footer {
-    padding: 3% 0 1% 0; }
-    body footer .container .first {
-      font-size: 10px;
-      width: 90%; }
-    body footer .container .second {
-      font-size: 10px; }
-      body footer .container .second p {
-        margin: 0 0 0 6%;
-        width: 87%; }
-    body footer .container .third ul li {
-      padding: 0 0 18% 0; }
-    body footer .container .fourth ul li {
-      padding: 0 0 10% 0; } }
+      body footer .footerContainer .leftBox {
+        display: flex; }
+        body footer .footerContainer .leftBox .left {
+          margin-right: 1vw; }
+        body footer .footerContainer .leftBox .left, body footer .footerContainer .leftBox .right {
+          display: inline-block;
+          width: 22vw; }
+      body footer .footerContainer .rightBox {
+        display: flex;
+        width: 33vw; }
+        body footer .footerContainer .rightBox .left {
+          margin-left: 0; }
+        body footer .footerContainer .rightBox .right {
+          margin-left: 8vw;
+          width: 14vw; }
+        body footer .footerContainer .rightBox .left, body footer .footerContainer .rightBox .right {
+          display: inline-block; }
+          body footer .footerContainer .rightBox .left ul, body footer .footerContainer .rightBox .right ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0; }
+            body footer .footerContainer .rightBox .left ul li, body footer .footerContainer .rightBox .right ul li {
+              font-size: 2vw;
+              padding: .5vw 0;
+              text-transform: uppercase; }
+              body footer .footerContainer .rightBox .left ul li:nth-child(1), body footer .footerContainer .rightBox .right ul li:nth-child(1) {
+                padding-top: 0; }
+              body footer .footerContainer .rightBox .left ul li a, body footer .footerContainer .rightBox .right ul li a {
+                color: inherit;
+                text-decoration: none;
+                transition: .2s ease-in-out; }
+                body footer .footerContainer .rightBox .left ul li a:hover, body footer .footerContainer .rightBox .right ul li a:hover {
+                  color: #6CB6FF;
+                  transition: .2s ease-in-out; }
+      body footer .footerContainer .bottom {
+        bottom: 0;
+        left: 45vw;
+        position: absolute; }
 
 /*# sourceMappingURL=main.css.map */
